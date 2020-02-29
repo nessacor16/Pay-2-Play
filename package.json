@@ -1,0 +1,39 @@
+{
+  "name": "pay-2-play",
+  "version": "1.0.0",
+  "description": "Project 2",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "bash": "${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stripe.framework/integrate-dynamic-framework.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nessacor16/Pay-2-Play.git"
+  },
+  "author": "Vanessa Corlette",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nessacor16/Pay-2-Play/issues"
+  },
+  "homepage": "https://github.com/nessacor16/Pay-2-Play#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "glob": "^7.1.6",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.1.0",
+    "pod": "^0.9.0",
+    "resolve": "^1.15.1",
+    "sequelize": "^5.21.5",
+    "sequelize-cli": "^5.5.1",
+    "stripe": "^8.23.0",
+    "uuid": "^7.0.1",
+    "webhook": "0.0.2"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.2"
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/creditCard-style.css" media="screen" title="no title">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+
+<!-- ------------------------------ PAYMENTS LINKS -->
+      <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+      <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono">
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+						<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+						<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+            <title>VMS Game Three</title>
+            <script src="https://js.stripe.com/v3/"></script>
+</head>
+
+<body>
+
+
+
+    <form action="/Charge" method="POST">
+        <script
+            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+            data-key="<%= pk_test_jCIWU5iANTldYMCyvpGBtapT00IoaOtH9Z %>"
+            data-amount="500"
+            data-name="Stripe.com"
+            data-description="Sample Charge"
+            data-locale="auto"
+            data-zip-code="true">
+            
+        </script>
+        <script> "public string stripePublishableKey = WebConfigurationManager.AppSettings" ["StripePublishableKey"]</script>
+    </form>
+
+
+
+
+
+</body>
+</html>
